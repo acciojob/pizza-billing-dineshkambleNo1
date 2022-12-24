@@ -31,21 +31,25 @@ public class Pizza {
         this.cheese_price = 80;
         this.paperBag_price = 20;
 
-        if(isVeg) {
+        if(isVeg == true) {
 
             this.price = 300;
             this.toppings_price = 70;
+
+            this.bill = "Base Price Of The Pizza:"+this.price + "\n";
         }
         else{
             this.price = 400;
             this.toppings_price = 120;
+
+            this.bill = "Base Price Of The Pizza:"+this.price + "\n";
         }
 
         isCheeseAdded = false;
         isToppingAdded = false;
         isBagPriceAdded = false;
 
-        this.bill = "Base Price Of The Pizza:"+this.price + "\n";
+
 
     }
 
@@ -56,7 +60,7 @@ public class Pizza {
     public void addExtraCheese(){
         // your code goes here
 
-        if(!isCheeseAdded)
+        if(isCheeseAdded == false)
         {
             this.price = this.price + this.cheese_price;
 
@@ -69,7 +73,7 @@ public class Pizza {
     public void addExtraToppings(){
         // your code goes here
 
-        if(!isToppingAdded)
+        if(isToppingAdded == false)
         {
             this.price = this.price + this.toppings_price;
 
@@ -85,7 +89,7 @@ public class Pizza {
 
 
 
-        if(!isBagPriceAdded)
+        if(isBagPriceAdded == false)
         {
             this.price = this.price + this.paperBag_price;
 
@@ -103,18 +107,18 @@ public class Pizza {
 
     public String getBill(){
         // your code goes here
-        if(!isbillgenerated){
+        if(isbillgenerated == false){
 
-            if(isCheeseAdded)
+            if(isCheeseAdded == true)
             {
                 this.bill = this.bill +  "Extra Cheese Added: "+ this.cheese_price + "\n";
             }
 
-            if(isToppingAdded){
+            if(isToppingAdded == true){
                 this.bill = this.bill +"Extra Toppings Added: "+ this.toppings_price + "\n";
             }
 
-            if(isBagPriceAdded){
+            if(isBagPriceAdded == true){
                 this.bill = this.bill +"Paperbag Added: "+  this.paperBag_price + "\n";
             }
 
