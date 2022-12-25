@@ -32,12 +32,12 @@ public class Pizza {
         isBagPriceAdded = false;
 
         this.cheese_price = 80;
-
+        this.paperBag_price = 20;
 
         if(isVeg){
             this.price = 300;
             this.toppings_price=70;
-            this.paperBag_price = 20;
+
         }
         else {
             this.price =400;
