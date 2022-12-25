@@ -34,7 +34,7 @@ public class Pizza {
         this.cheese_price = 80;
 
 
-        if(isVeg== true){
+        if(isVeg){
             this.price = 300;
             this.toppings_price=70;
             this.paperBag_price = 20;
@@ -82,7 +82,7 @@ public class Pizza {
     }
 
     public void addTakeaway(){
-        if(!isBagPriceAdded && isVeg == true)
+        if(!isBagPriceAdded && isVeg)
         {
             this.price = this.price + this.paperBag_price;
 
