@@ -34,17 +34,18 @@ public class Pizza {
         this.cheese_price = 80;
         this.paperBag_price = 20;
 
-        if(isVeg == true)
-        {
+        if(isVeg== true){
             this.price = 300;
-            this.toppings_price = 70;
+            this.toppings_price=70;
         }
-        else{
-            this.price = 400;
-            this.toppings_price = 120;
-        }
+        else {
+            this.price =400;
+            this.toppings_price= 120;
 
-     this.bill = "Base Price Of The Pizza:"+this.price + "\n";
+        }
+        this.bill = "Base Price Of The Pizza:"+this.price + "\n";
+        //System.out.println(this.bill);
+
 
     }
 
