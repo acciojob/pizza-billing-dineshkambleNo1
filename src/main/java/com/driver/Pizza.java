@@ -29,7 +29,7 @@ public class Pizza {
 
         isCheeseAdded = false;
         isToppingAdded = false;
-        isBagPriceAdded = false;
+        //isBagPriceAdded = false;
 
         this.cheese_price = 80;
 
@@ -80,14 +80,7 @@ public class Pizza {
     }
 
     public void addTakeaway(){
-        if(!isBagPriceAdded && isVeg)
-        {
-            this.price = this.price + this.paperBag_price;
-
-            // or fir cheese ko add kardo
-
-            isBagPriceAdded  = true;
-        }
+        this.price = this.price + this.paperBag_price;
     }
 
     //
