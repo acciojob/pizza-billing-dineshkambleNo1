@@ -44,7 +44,7 @@ public class Pizza {
             this.toppings_price= 120;
 
         }
-        this.bill = "Base Price Of The Pizza:"+this.price +"\n";
+        this.bill = "Base Price Of The Pizza: "+this.price +"\n";
 
     }
 
