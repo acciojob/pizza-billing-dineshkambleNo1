@@ -14,13 +14,12 @@ public class Pizza {
 
     //for check
 
-    boolean isCheeseAdded;
-    boolean isToppingAdded;
+   private   boolean isCheeseAdded;
+   private boolean isToppingAdded;
+   private boolean isBagPriceAdded;
 
-    boolean isBagPriceAdded;
 
-
-    boolean isbillgenerated;
+   private boolean isbillgenerated;
 
 
 
@@ -28,11 +27,15 @@ public class Pizza {
         this.isVeg = isVeg;
         // your code goes here
 
+        isCheeseAdded = false;
+        isToppingAdded = false;
+        isBagPriceAdded = false;
+
         this.cheese_price = 80;
         this.paperBag_price = 20;
 
-        if(isVeg) {
-
+        if(isVeg == true)
+        {
             this.price = 300;
             this.toppings_price = 70;
         }
@@ -41,11 +44,7 @@ public class Pizza {
             this.toppings_price = 120;
         }
 
-        isCheeseAdded = false;
-        isToppingAdded = false;
-        isBagPriceAdded = false;
-
-        this.bill = "Base Price Of The Pizza:"+this.price + "\n";
+     this.bill = "Base Price Of The Pizza:"+this.price + "\n";
 
     }
 
@@ -81,10 +80,6 @@ public class Pizza {
     }
 
     public void addTakeaway(){
-        // your code goes here
-
-
-
         if(!isBagPriceAdded)
         {
             this.price = this.price + this.paperBag_price;
@@ -118,7 +113,7 @@ public class Pizza {
                 this.bill = this.bill +"Paperbag Added: "+  this.paperBag_price + "\n";
             }
 
-            this.bill = this.bill + "Total Price: "+ this.price;
+            this.bill = this.bill + "Total Price: "+ this.price + "\n";
 
             isbillgenerated = true; // bhai don't generate bill again and again
 
