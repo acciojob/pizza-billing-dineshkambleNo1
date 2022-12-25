@@ -29,7 +29,7 @@ public class Pizza {
 
         isCheeseAdded = false;
         isToppingAdded = false;
-        //isBagPriceAdded = false;
+        isBagPriceAdded = false;
 
         this.cheese_price = 80;
 
@@ -44,7 +44,7 @@ public class Pizza {
             this.toppings_price= 120;
 
         }
-        this.bill = "Base Price Of The Pizza: "+this.price +"\n";
+        this.bill = "Base Price Of The Pizza:"+this.price +"\n";
 
     }
 
@@ -103,7 +103,7 @@ public class Pizza {
             }
 
             if(isBagPriceAdded){
-                this.bill = this.bill +"Paperbag Added: "+  this.paperBag_price + "\n";
+                this.bill = this.bill +"Paperbag Added: " +  this.paperBag_price + "\n";
             }
 
             this.bill = this.bill + "Total Price: "+ this.price + "\n";
