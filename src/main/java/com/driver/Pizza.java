@@ -80,7 +80,11 @@ public class Pizza {
     }
 
     public void addTakeaway(){
-        this.price = this.price + this.paperBag_price;
+        if(!isBagPriceAdded)
+        {
+            this.price = this.price + this.paperBag_price;
+            isBagPriceAdded = true;
+        }
     }
 
     //
