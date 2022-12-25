@@ -44,9 +44,7 @@ public class Pizza {
             this.toppings_price= 120;
 
         }
-        this.bill = "Base Price Of The Pizza:"+this.price + "\n";
-        //System.out.println(this.bill);
-
+        this.bill = "Base Price Of The Pizza:"+this.price +"\n";
 
     }
 
@@ -104,18 +102,18 @@ public class Pizza {
 
             if(isCheeseAdded)
             {
-                this.bill = this.bill +  "Extra Cheese Added: "+ this.cheese_price + "\n";
+                this.bill = this.bill +"Extra Cheese Added:"+ this.cheese_price + "\n";
             }
 
             if(isToppingAdded){
-                this.bill = this.bill +"Extra Toppings Added: "+ this.toppings_price + "\n";
+                this.bill = this.bill +"Extra Toppings Added:"+ this.toppings_price + "\n";
             }
 
             if(isBagPriceAdded){
-                this.bill = this.bill +"Paperbag Added: "+  this.paperBag_price + "\n";
+                this.bill = this.bill +"Paperbag Added:"+  this.paperBag_price + "\n";
             }
 
-            this.bill = this.bill + "Total Price: "+ this.price + "\n";
+            this.bill = this.bill + "Total Price:"+ this.price + "\n";
 
             isbillgenerated = true; // bhai don't generate bill again and again
 
